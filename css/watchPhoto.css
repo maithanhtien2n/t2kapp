@@ -1,0 +1,288 @@
+:root {
+    --FontColor: #152742;
+    --while: #fff;
+    --whileNhac: rgb(238, 238, 238);
+    --xamColor: #65676B;
+    --BtnColor: #0bb3e4;
+    --BgColor: #ebeef3;
+    --BgPosts: #F0F2F5;
+}
+
+.watch__photo::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Phần watch photo */
+.watch__photo {
+    position: fixed;
+    top: 0; right: 0;
+    left: 0; bottom: 0;
+    background-color: black;
+    z-index: 9999999999;
+    display: flex;
+}
+
+.watch__photo > .fa-xmark {
+    font-size: 30px;
+    position: absolute;
+    top: 20px; left: 30px;
+    color: var(--while);
+    cursor: pointer;
+}
+
+/* Phần left */
+.watch__photo__left {
+    width: 75%;
+    height: 100%;
+    text-align: center;
+}
+
+.watch__photo__left img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Phần right */
+.watch__photo__right {
+    width: 25%;
+    height: 100%;
+    background-color: var(--while);
+}
+
+/* - Phần top */
+.watch__photo__right__top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1px solid #15274228;
+}
+
+.watch__photo__right__top h3 {
+    font-size: 15px;
+    color: var(--FontColor);
+}
+
+.watch__photo__right__top img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* - Phần user */
+.watch__photo__right__user {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.watch__photo__right__user__left {
+    display: flex;
+    align-items: center;
+}
+
+.watch__photo__right__user__left img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.watch__photo__right__user__left h3 {
+    font-size: 15px;
+    color: var(--FontColor);
+}
+
+
+.watch__photo__right__user > i {
+    font-size: 17px;
+    padding: 8px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.watch__photo__right__user > i:hover {
+    background-color: #1527420e;
+}
+
+/* - Phần caption */
+.watch__photo__right__caption {
+    padding: 10px 20px;
+}
+
+.watch__photo__right__caption p {
+    font-size: 15px;
+}
+
+/* - Phần icon */
+.watch__photo__right__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.watch__photo__right__icon__left {
+    display: flex;
+    align-items: center;
+}
+
+.watch__photo__right__icon__left > i {
+    margin-right: 20px;
+}
+
+/* - Phần parameter */
+.watch__photo__right__parameter {
+    display: flex;
+    padding: 5px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #15274228;
+}
+
+.watch__photo__right__parameter h3 {
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+/* - Phần nhập comment */
+.watch__photo__right__comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #15274228;
+}
+
+.watch__photo__right__comment img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+.watch__photo__right__comment_content {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--FontColor);
+}
+
+.watch__photo__right__comment_content input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.watch__photo__right__comment_content > i {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+/* Phần ghi hiện comment */
+.watch__photo__right__comment__list__container {
+    width: 100%;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.watch__photo__right__comment__list__container:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.watch__photo::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+.watch__photo::-webkit-scrollbar-thumb {
+    background-color: #cdcecf;
+    border-radius: 20px;
+}
+
+.watch__photo__right__comment__list {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.watch__photo__right__comment__list img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.watch__photo__right__comment__list__content {
+    padding: 10px;
+    background-color: #cdcecf75;
+    border-radius: 10px;
+    position: relative;
+}
+
+.watch__photo__right__comment__list__content h3,p {
+    font-size: 13px;
+}
+
+.watch__photo__right__comment__list__content p {
+    margin-top: 5px;
+}
+
+.watch__photo__right__comment__list__content > .fa-xmark {
+    position: absolute;
+    right: -20px;
+    color: var(--FontColor);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.watch__photo__right__comment__list__content > .fa-xmark:hover {
+    background-color: #1527420e;
+}
+
+/* -Máy tính bản */
+@media only screen and (max-width: 1494px) {
+
+    .watch__photo {
+        flex-wrap: wrap;
+    }
+
+    .watch__photo__left {
+        width: 100%;
+        height: 40%;
+    }
+   
+    .watch__photo__right {
+        width: 100%;
+        height: 60%;
+    }
+
+    .watch__photo__right__top {
+        display: none;
+    }
+
+    .watch__photo__right__comment__list__container {
+        height: 150px;
+    }
+
+    .watch__photo > .fa-xmark {
+        font-size: 20px;
+        top: 10px; left: 15px;
+    }
+
+}

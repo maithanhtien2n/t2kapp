@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/posts.css">
+    <link rel="stylesheet" href="./css/upPosts.css">
+    <link rel="stylesheet" href="./css/personal.css">
+    <link rel="stylesheet" href="./css/updateImg.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/watchPhoto.css">
+    <title>Website Book</title>
+</head>
+
+<body>
+    <!-- Phần header -->
+    <header class="header__container">
+
+        <div class="header">
+
+            <div onclick="btnMenu()" class="fas fa-bars"></div>
+
+            <div class="header__search">
+                <div class="header__search__img">
+                    <img src="./image/logot2k.png" alt="">
+                </div>
+                <div class="header__search__input">
+                    <input type="search" placeholder="Bạn muốn tìm kiếm?">
+                    <div class="fas fa-search"></div>
+                </div>
+            </div>
+
+            <nav class="header__navbar">
+                <ul>
+                    <div onclick="btnClose()" class="fas fa-xmark"></div>
+                    <li onclick="home()" class="header__navbar__li__home active">Home</li>
+                    <li onclick="posts()" class="header__navbar__li__posts">Posts</li>
+                    <li onclick="personal()" class="header__navbar__li__personal">Personal</li>
+                    <li class="iconMXH">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div onclick="btnClose()" class="header__bgNavbar"></div>
+
+            <div class="header__user">
+                <h3>Tiện Thanh</h3>
+                <div class="fas fa-caret-down"></div>
+                <div class="header__user__img">
+                    <img src="./image/user.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Phần section home container -->
+    <div class="section__container__home active">
+
+        <!-- Phần section 1 -->
+        <div class="section1">
+
+            <div class="section1__text">
+                <div class="section1__text__content">
+                    <h5>Hello!</h5>
+                    <h3>I'm Tien Thanh</h3>
+                    <p>Những devloper nổi tiếng đều gặp phải những vấn đề nan giải cho đến khi họ giải quyết được nó...
+                    </p>
+                    <div class="section1__text-gach"></div>
+                    <button class="section1__text__btn">Hire me</button>
+                </div>
+            </div>
+
+            <div class="section1__img">
+                <img src="./image/bannerUser.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- Phần section 2 -->
+        <div class="section2">
+
+            <div class="section2__img">
+                <div class="section2__img__container">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+
+                <div class="section2__img__content">
+                    <h3>MAI THANH TIỆN</h3>
+                    <p>Front End Developers</p>
+                </div>
+            </div>
+
+            <div class="section2__gach"></div>
+
+            <div class="section2__text">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Ngày sinh</h5>
+                            <p>06/12/2000</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Giới tính</h5>
+                            <p>Nam</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Điện thoại</h5>
+                            <p>(+84) 0366162465</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Email</h5>
+                            <p>maithanhtien2n@gmail.com</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Fanpage</h5>
+                            <p>https://www.facebook.com/t2kgamer</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-house-user"></i>
+                        <div class="section2__text__ngaySinh">
+                            <h5>Địa chỉ</h5>
+                            <p>68 Nguyễn Chí Thanh, Phường 7, TP. Tuy Hòa, Phú Yên</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Phần section posts container -->
+    <div class="section__container__posts">
+        <div class="section__container__posts__mini">
+
+            <div onclick="btnUpCaption()" class="section__container__posts__mini__section1">
+                <div class="fas fa-plus"></div>
+                <h4>Đăng bài</h4>
+            </div>
+            <!--  -->
+            <h3 class="section__container__posts__mini__caption">Posts</h3>
+            <!--  -->
+            <div class="section__container__posts__mini__section2">
+
+                <div class="section__container__posts__mini__section2__header">
+
+                    <div class="section__container__posts__mini__section2__header__user">
+                        <img src="./image/user.jpg" alt="">
+                        <h3><a href="#">Tiện Thanh</a></h3>
+                    </div>
+
+                    <div onclick="postsHienFuntion()" class="fas fa-ellipsis">
+                        <div class="fa__ellipsis__funtion">
+                            <h3>Sửa bài viết</h3>
+                            <h3>Xóa bài viết</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section__container__posts__mini__section2__body">
+
+                    <p>Hi xin chào các bạn!</p>
+
+                    <div class="section__container__posts__mini__section2__body__img">
+                        <img src="./image/imgSection2.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="section__container__posts__mini__section2__footer">
+
+                    <div class="section__container__posts__mini__section2__footer__icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <div class="section__container__posts__mini__section2__parameter">
+                    <h3>7 lượt thích</h3>
+                    <h3>10 bình luận</h3>
+                    <h3>0 lượt chia sẻ</h3>
+                </div>
+
+                <div class="section__container__posts__mini__section2__comment">
+
+                    <img src="./image/user.jpg" alt="">
+
+                    <div class="section__container__posts__mini__section2__comment_content">
+                        <input type="text" placeholder="Viết bình luận...">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="section__container__posts__mini__section2__comment__list">
+
+                    <img src="./image/user.jpg" alt="">
+
+                    <div class="section__container__posts__mini__section2__comment__list__content">
+
+                        <h3><a href="#">Tiện Thanh</a></h3>
+                        <p>Ảnh đẹp quá!</p>
+
+                        <div class="fas fa-xmark"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div onclick="postsAnFuntion()" class="section__container__posts__mini__close">
+            </div>
+            <!--  -->
+
+        </div>
+
+        <div class="section__container__posts__modal__upPosts active">
+            <div class="section__container__posts__modal__upPosts__container">
+
+                <div onclick="btnCloseCaption()" class="fas fa-xmark"></div>
+
+                <div class="section__container__posts__modal__upPosts__container__header">
+                    <h3>Tạo bài viết</h3>
+                </div>
+
+                <div class="section__container__posts__modal__upPosts__container__body">
+
+                    <div class="section__container__posts__modal__upPosts__container__body__user">
+                        <img src="./image/user.jpg" alt="">
+                        <h3>Tiện Thanh</h3>
+                    </div>
+
+                    <div class="section__container__posts__modal__upPosts__container__body__caption">
+                        <input type="text" placeholder="Hôm nay có gì vui?">
+                    </div>
+
+                    <div class="section__container__posts__modal__upPosts__container__body__addImg">
+
+                        <div class="section__container__posts__modal__upPosts__container__body__addImg__text">
+                            <h3>Thêm ảnh vào bài viết</h3>
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+
+                        <input type="search" placeholder="Nhập link ảnh vào...">
+
+                    </div>
+
+                </div>
+
+                <div class="section__container__posts__modal__upPosts__container__footer">
+                    <button>Đăng</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Phần section personal container -->
+    <div class="section__container__personal">
+        <div class="section__container__personal__mini">
+
+            <div class="section__container__personal__mini__banner">
+                <img src="./image/imgSection2.jpg" alt="">
+                <div onclick="btnUpdateBanner()" class="section__container__personal__mini__banner__updateImg">
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Chỉnh sửa ảnh bìa</h3>
+                </div>
+            </div>
+
+            <div class="section__container__personal__mini__info">
+
+                <div class="section__container__personal__mini__info__left">
+
+                    <div class="section__container__personal__mini__info__avatar">
+                        <img src="./image/user.jpg" alt="">
+                        <div class="section__container__personal__mini__info__avatar__updateImg">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </div>
+
+                    <div class="section__container__personal__mini__info__name-describe">
+                        <h3>Tiện Thanh</h3>
+                        <p>"Những devloper nổi tiếng đều gặp phải những vấn đề nan giải cho đến khi họ giải quyết được
+                            nó..."</p>
+                    </div>
+
+                </div>
+
+                <div class="section__container__personal__mini__info__right">
+                    <button class="section__container__personal__mini__info__right__edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <h4>Chỉnh sửa trang cá nhân</h4>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="section__container__personal__mini__title">
+                <h3>Album Ảnh</h3>
+            </div>
+
+            <div class="section__container__personal__mini__posts">
+
+                <div onclick="handalImg()" class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+                <div class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+                <div class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+                <div class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+                <div class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+                <div class="section__container__personal__mini__posts__img">
+                    <img src="./image/imgSection2.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section__container__personal__modal__updateImg active">
+            <div class="section__container__personal__modal__updateImg__container">
+
+                <div onclick="btnCloseUpdateBanner()" class="fas fa-xmark"></div>
+
+                <div class="section__container__personal__modal__updateImg__container__header">
+                    <h3>Cập nhật ảnh bìa</h3>
+                </div>
+
+                <div class="section__container__personal__modal__updateImg__container__body">
+
+                    <div class="section__container__personal__modal__updateImg__container__body__addImg">
+
+                        <div class="section__container__personal__modal__updateImg__container__body__addImg__text">
+                            <h3>Cập nhật ảnh bìa</h3>
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+
+                        <input type="search" placeholder="Nhập link ảnh vào...">
+
+                    </div>
+
+                </div>
+
+                <div class="section__container__personal__modal__updateImg__container__footer">
+                    <button>Lưu</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Phần footer -->
+    <footer class="footer">
+
+        <div class="footer__logo">
+            <img src="./image/logoFooter.png" alt="">
+            <p>@2022 Copyright by T2K</p>
+        </div>
+
+        <div class="footer__col1">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house-user"></i>
+                    <div class="section2__text__ngaySinh">
+                        <p>68 Nguyễn Chí Thanh, Phường 7, TP. Tuy Hòa, Phú Yên</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="section2__text__ngaySinh">
+                        <p>(+84) 0366162465</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="section2__text__ngaySinh">
+                        <p>maithanhtien2n@gmail.com</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                    <div class="section2__text__ngaySinh">
+                        <p>https://www.facebook.com/t2kgamer</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__col2">
+            <h3>VỀ CHÚNG TÔI</h3>
+            <ul>
+                <li>Giới thiệu</li>
+                <li>Chính sách</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+
+        <div class="footer__col3">
+            <h3>KẾT NỐI VỚI TÔI</h3>
+            <ul>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li class="cuoi"><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+
+        <div class="footer__end">
+            <p>@Thiết kế bởi Tiện Thanh!</p>
+        </div>
+
+    </footer>
+
+    <!-- Phần xem ảnh -->
+    <div class="watch__photo active">
+
+        <div onclick="closeHandalImg()" class="fas fa-xmark"></div>
+
+        <div class="watch__photo__left">
+            <img src="./image/imgSection2.jpg" alt="">
+        </div>
+
+        <div class="watch__photo__right">
+
+            <div class="watch__photo__right__top">
+                <h3>Tiện Thanh</h3>
+                <img src="./image/user.jpg" alt="">
+            </div>
+
+            <div class="watch__photo__right__user">
+
+                <div class="watch__photo__right__user__left">
+                    <img src="./image/user.jpg" alt="">
+                    <h3>Tiện Thanh</h3>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+            <div class="watch__photo__right__caption">
+                <p>Xin chào các bạn!</p>
+            </div>
+
+            <div class="watch__photo__right__icon">
+
+                <div class="watch__photo__right__icon__left">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+
+                <i class="fa-regular fa-bookmark"></i>
+
+            </div>
+
+            <div class="watch__photo__right__parameter">
+                <h3>7 lượt thích</h3>
+                <h3>10 bình luận</h3>
+                <h3>0 lượt chia sẻ</h3>
+            </div>
+
+            <div class="watch__photo__right__comment">
+
+                <img src="./image/user.jpg" alt="">
+
+                <div class="watch__photo__right__comment_content">
+                    <input type="text" placeholder="Viết bình luận...">
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+
+            </div>
+
+            <div class="watch__photo__right__comment__list__container">
+
+                <div class="watch__photo__right__comment__list">
+
+                    <img src="./image/user.jpg" alt="">
+
+                    <div class="watch__photo__right__comment__list__content">
+
+                        <h3><a href="#">Tiện Thanh</a></h3>
+                        <p>Ảnh đẹp quáfgdsgsdgsdgsgsd!</p>
+
+                        <div class="fas fa-xmark"></div>
+
+                    </div>
+
+                </div>
+                <div class="watch__photo__right__comment__list">
+
+                    <img src="./image/user.jpg" alt="">
+
+                    <div class="watch__photo__right__comment__list__content">
+
+                        <h3><a href="#">Tiện Thanh</a></h3>
+                        <p>Ảnh đẹp quáfgdsgsdgsdgsgsd!</p>
+
+                        <div class="fas fa-xmark"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
